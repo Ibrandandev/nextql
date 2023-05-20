@@ -33,12 +33,14 @@ export default function ProductForm({ id }) {
 
   useEffect(() => {
     const getProduct = async (id) => {
-      const { data } = await axios.get(`/api/products/${id}`);
+      const { data } = await axios.get(
+        `https://nextql-ibrandandev.vercel.app/api/products/${id}`
+      );
       setProduct(data);
     };
 
     getProduct(id);
-  });
+  }, []);
 
   return (
     <form className="flex flex-col item-center" onSubmit={handleSubmit}>

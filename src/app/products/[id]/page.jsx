@@ -9,7 +9,7 @@ export default async function ProductPage({ params: { id } }) {
   const router = useRouter();
 
   const { data: product } = await axios.get(
-    `http://localhost:3000/api/products/${id}`
+    `https://nextql-ibrandandev.vercel.app/api/products/${id}`
   );
 
   const handleDelete = async (id) => {

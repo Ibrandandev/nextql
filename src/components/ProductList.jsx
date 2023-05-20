@@ -1,10 +1,15 @@
-import axios from "axios";
+"use client";
+
 import ProductCard from "./ProductCard";
 
 export default async function ProductList() {
-  const { data: products } = await axios.get(
-    "http://localhost:3000/api/products"
+  const res = await fetch(
+    "https://nextql-ibrandandev.vercel.app//api/products",
+    {
+      cache: "no-store",
+    }
   );
+  const products = await res.json();
 
   const renderProducts = () => {
     if (products.length > 0) {
