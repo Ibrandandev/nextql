@@ -1,10 +1,10 @@
 import { createPool } from "mysql2/promise";
 
 const pool = createPool({
-  host: "aws.connect.psdb.cloud",
-  user: "9yycarxia4og1jkx65v3",
-  password: "pscale_pw_9ZHko76aBIWJYTOHaFrJydyCkgkYoJKbaooqKIE1WgK",
-  database: "nextql",
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
   ssl: { rejectUnauthorized: true },
 });
 
