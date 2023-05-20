@@ -14,7 +14,7 @@ export default async function ProductPage({ params: { id } }) {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`/api/products/${id}`);
+      await axios.delete(`https://nextql-black.vercel.app/api/products/${id}`);
       toast.success("Product deleted successfully");
       setTimeout(() => {
         router.push("/products");
