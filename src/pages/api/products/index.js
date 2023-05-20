@@ -12,9 +12,7 @@ const saveProducts = async (req, res) => {
       .status(200)
       .json({ id: result.insertId, name, price, description });
   } catch (error) {
-    return res
-      .status(500)
-      .json({ message: "Something went wrong, please try again" });
+    return res.status(500).json({ message: error.message });
   }
 };
 
