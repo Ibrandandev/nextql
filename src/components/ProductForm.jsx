@@ -36,7 +36,7 @@ export default function ProductForm() {
   return (
     <form className="flex flex-col item-center" onSubmit={handleSubmit}>
       <ToastContainer autoClose={3000} theme="dark" />
-      <div className="max-w-sm w-full mx-auto">
+      <div className="max-w-[300px] w-full mx-auto">
         <div className="mb-3 flex flex-col gap-2">
           <label htmlFor="name" className="">
             Product Name

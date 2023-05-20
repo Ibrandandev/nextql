@@ -44,7 +44,7 @@ export default function ProductForm({ id }) {
 
   return (
     <form className="flex flex-col item-center" onSubmit={handleSubmit}>
-      <div className="max-w-sm w-full mx-auto">
+      <div className="max-w-[300px] w-full mx-auto">
         <div className="mb-3 flex flex-col gap-2">
           <label htmlFor="name" className="">
             Product Name
