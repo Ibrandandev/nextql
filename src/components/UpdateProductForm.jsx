@@ -34,7 +34,7 @@ export default function ProductForm({ id }) {
   useEffect(() => {
     const getProduct = async (id) => {
       const { data } = await axios.get(
-        `https://nextql-ibrandandev.vercel.app/api/products/${id}`
+        `https://nextql-black.vercel.app/api/products/${id}`
       );
       setProduct(data);
     };

@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 
 export default async function ProductList() {
   const res = await fetch(
-    "https://nextql-ibrandandev.vercel.app//api/products",
+    "https://nextql-black.vercel.app/api/products",
     {
       cache: "no-store",
     }
